@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Andrew Zabloudil</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link href="/static/css/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <a class="logo desktop" href="#top">Andrew Zabloudil</a>
+        <a class="logo tablet" href="#top">Andrew Zabloudil</a>
+        <a class="logo mobile" href="#top">AZ</a>
+        <a class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <ul class="nav">
+          <li>
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li>
+            <a href="#about" class="nav-link">About Me</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="overlay" id="mobile-nav">
+        <ul class="mobile-nav">
+          <li>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+          </li>
+          <li>
+            <a href="#about" class="mobile-nav-link">About Me</a>
+          </li>
+          <li>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="splash" id="top">
+      <img
+        class="splash-image"
+        src="static/img/markus-spiske-Skf7HxARcoc-unsplash-dark.jpg"
+      />
+      <p class="splash-text">
+        Hi, I'm Andrew. <br />
+        I Write Code <br />
+        From A to Z.
+      </p>
+      <a class="splash-link" href="#projects"> View My Work </a>
+    </div>
+    <div class="container">
+      <a class="anchor" id="projects"></a>
+      <h2 class="section-head">PROJECTS</h2>
+      <div class="flex-container">
+        <div class="card">
+          <div class="card-body">
+            <img
+              class="card-img"
+              src="static/img/boogabot-example-cropped.png"
+              alt="Example image showing BoogaBot being used to check the global case count for COVID-19."
+            />
+            <div class="card-text">
+              <div class="card-title">BoogaBot</div>
+              <div class="card-desc">
+                A Discord Bot programmed in Python using the Discord.py package
+                for the Discord API. Has moderation commands such as Kick, Ban,
+                and Assign/Remove Role; and general commands that include
+                scraping the web for news about COVID-19 and more.
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a
+              class="card-link"
+              href="https://github.com/andrew-zabloudil/BoogaBot"
+              >View Code</a
+            >
+            <div class="card-link demo">Video Demo</div>
+            <div class="modal" id="boogabotModal">
+              <span class="close">&times;</span>
+              <img
+                class="demoModal"
+                id="boogabotDemo"
+                src="static/img/boogabot-demo.gif"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <img
+              class="card-img"
+              src="static/img/pathfinder-example-cropped.png"
+              alt="Example image showing a start and end node inside a maze with the shortest path between them highlighted."
+            />
+            <div class="card-text">
+              <div class="card-title">Pathfinder</div>
+              <div class="card-desc">
+                A pathfinding visualizer created with Pygame that utilizes
+                Dijkstra's algorithm to find the shortest route between two
+                points placed by the user. The user can also place walls as
+                obstacles or generate a random maze for the algorithm to clear.
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a
+              class="card-link"
+              href="https://github.com/andrew-zabloudil/Pathfinder"
+              >View Code</a
+            >
+            <div class="card-link demo">Video Demo</div>
+            <div class="modal" id="pathfinderModal">
+              <span class="close">&times;</span>
+              <img
+                class="demoModal"
+                id="pathfinderDemo"
+                src="static/img/pathfinder-demo.gif"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <img
+              class="card-img"
+              src="static/img/tetros-example-cropped.png"
+              alt="Example image of Tetros, a game similar to Tetris."
+            />
+            <div class="card-text">
+              <div class="card-title">Tetros</div>
+              <div class="card-desc">
+                A slightly modified clone of the popular falling block game
+                Tetris, created using Pygame.
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a
+              class="card-link"
+              href="https://github.com/andrew-zabloudil/Tetros"
+              >View Code</a
+            >
+            <div class="card-link demo">Video Demo</div>
+            <div class="modal" id="tetrosModal">
+              <span class="close">&times;</span>
+              <img
+                class="demoModal"
+                id="tetrosDemo"
+                src="static/img/tetros-demo.gif"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <a class="anchor" id="about"></a>
+      <h3 class="section-head">ABOUT ME</h3>
+      <div class="flex-container">
+        <div class="skills">
+          <h3 class="subsection-head">My Skills</h3>
+          <a
+            class="resume"
+            href="static/docs/Andrew_Zabloudil_Resume_Sept_2020.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Resume</a
+          >
+          <ul>
+            <li>Python</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="about-me">
+          <h3 class="subsection-head">My Story</h3>
+          <p>
+            My first experience with programming was in middle school when I
+            taught myself HTML from a book I begged my parents to buy for me,
+            and I was instantly hooked. In high school I took my school's only
+            two programming courses, but felt lost after completing them and
+            took a break from programming. <br /><br />
+            I eventually went to college and, chasing after a desire to have a
+            career with lots of problem solving, obtained a degree in Mechanical
+            Engineering. Even throughout college, though, my love for
+            programming surfaced in a select few classes which used an Arduino.
+            I began learning Japanese on my own during college and also found
+            myself enamored with language learning. <br /><br />
+            After graduating with my degree in Mechanical Engineering, my desire
+            to be a problem solver and love of languages eventually led me to
+            rediscover programming again. With the realization that programming
+            perfectly combines the things I loved about engineering and language
+            learning, I picked up Python and haven't looked back since.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <a class="anchor" id="contact"></a>
+      <h2 class="section-head">CONTACT</h2>
+      <div class="contact">
+        <div class="contact-left">
+          <div class="contact-info">
+            <p class="bold">Phone Number:</p>
+            <p>(405) 315-5373</p>
+            <p class="bold">Email Address:</p>
+            <p>
+              <a class="contact-link" href="mailto:andrew.zabloudil@gmail.com"
+                >andrew.zabloudil@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <iframe
+            class="desktop"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfc0jFdi2JV_qdWOqWYCSw6AYUk7dkKGcKrD6afTuuDmz3qoA/viewform?embedded=true"
+            width="100%"
+            height="723"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            >Loading…</iframe
+          >
+
+          <iframe
+            class="tablet"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfc0jFdi2JV_qdWOqWYCSw6AYUk7dkKGcKrD6afTuuDmz3qoA/viewform?embedded=true"
+            width="100%"
+            height="723"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            >Loading…</iframe
+          >
+
+          <iframe
+            class="mobile"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfc0jFdi2JV_qdWOqWYCSw6AYUk7dkKGcKrD6afTuuDmz3qoA/viewform?embedded=true"
+            width="115%"
+            height="805"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            >Loading…</iframe
+          >
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="static/scripts/scripts.js"></script>
+  </body>
+
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/andrew-zabloudil"
+        ><img src="static/img/GitHub-Mark-32px.png" class="footer-icon"
+      /></a>
+      <a href="https://www.linkedin.com/in/andrew-zabloudil/"
+        ><img src="static/img/LI-In-Bug.png" class="footer-icon"
+      /></a>
+    </div>
+  </footer>
+</html>
