@@ -61,7 +61,6 @@ def show_post(post_id):
 def create_new_post():
     form = CreatePostForm()
     if form.validate_on_submit():
-        now = datetime.now()
         new_post = BlogPost(
             title=form.title.data,
             subtitle=form.subtitle.data,
@@ -73,7 +72,28 @@ def create_new_post():
         db.session.add(new_post)
         db.session.commit()
         return redirect(url_for("get_all_posts"))
-    return render_template("make-post.html", form=form)
+    return render_template("make-post.html", form=form, post=None)
+
+
+@app.route("/edit-post/<post_id>", methods=["GET", "POST"])
+def edit_post(post_id):
+    post = BlogPost.query.get(post_id)
+    form = CreatePostForm(
+        title=post.title,
+        subtitle=post.subtitle,
+        img_url=post.img_url,
+        author=post.author,
+        body=post.body
+    )
+    if form.validate_on_submit():
+        post.title = form.title.data
+        post.subtitle = form.subtitle.data
+        post.img_url = form.img_url.data
+        post.author = form.author.data
+        post.body = form.body.data
+        db.session.commit()
+        return redirect(url_for("show_post", post_id=post.id))
+    return render_template("make-post.html", form=form, post=post)
 
 
 @app.route("/about")
